@@ -17,6 +17,6 @@ stages:
       image: vernovaacr.azurecr.io/testimage:1104
       endpoint: 'vernovaacr'
     steps:
-    - script: apt list --installed
-      displayName: 'Check installed softwares'
+    - script: ansible --version
+      displayName: 'Check ansible version'
 
