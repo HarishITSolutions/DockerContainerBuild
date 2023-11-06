@@ -17,6 +17,6 @@ stages:
       image: vernovaacr.azurecr.io/testimage:1123
       endpoint: 'vernovaacr'
     steps:
-    - script: az --version
-      displayName: 'Check azure cli version'
+    - script: terraform --version
+      displayName: 'Check terraform version'
 
