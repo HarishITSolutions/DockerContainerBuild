@@ -14,9 +14,9 @@ stages:
   - job:
     displayName: "Build our container"
     container:
-      image: vernovaacr.azurecr.io/testimage:1123
+      image: vernovaacr.azurecr.io/testimage:1130
       endpoint: 'vernovaacr'
     steps:
-    - script: terraform --version
+    - script: az --version
       displayName: 'Check terraform version'
 
